@@ -1,0 +1,12 @@
+First of all you have to install all the dependencies
+
+1)  npm install --save sequelize-cli
+2)  npm install --save pg pg-hstore (if working on postgres)
+3)  npx sequelize-cli init
+4)  change all the things accordingly
+5)  create a migration using  :- npx sequelize-cli model:generate --name Users --attributes name:string,email:string
+6)  then migrate the db using :- npx sequelize-cli db:migrate
+
+check status
+
+npx sequelize-cli db:migrate:status
